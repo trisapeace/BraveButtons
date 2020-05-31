@@ -132,6 +132,7 @@ if __name__ == '__main__':
             except FlicNotFoundError as e:
                 # this means that the flic didn't show up in darkstat's list of hosts
                 # typically this happens on startup for a few seconds until the flic becomes active on the network
+                # Add something
                 system_ok = True
                 print(datetime.datetime.now().isoformat(), " - flic not found in darkstat html", flush=True)
             except Exception as e:
